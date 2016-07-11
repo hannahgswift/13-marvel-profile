@@ -19,7 +19,7 @@
         <div class="main-content">
           <div class="spotlight">
             <div class="img-container">
-              <img src="http://www.placekitten.com/300/300" alt="" class="character">
+              <img class="character" src="http://www.placekitten.com/300/300" alt="">
               <h3 class="spotlight-title">Spider-Girl (2010-2011)</h3>
               <h4 class="lifespan">2010-2011</h4>
               <h2 class="authors">Creators</h2>
@@ -112,7 +112,9 @@
   <script src="/app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
+    let element = document.querySelector('.main-content__container');
     let start = require('index');
+    start(element);
 
   </script>
 </body>
