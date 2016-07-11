@@ -7,6 +7,7 @@
 
 $bright-white: #ffffff;
 $gutter: 1rem;
+$dark-blue: #2c3e50;
 
 * {
   border: 1px solid red;
@@ -23,7 +24,7 @@ body {
 
 .heading-container {
   width: 100%;
-  background: navy;
+  background: $dark-blue;
 }
 
 .heading {
@@ -31,11 +32,12 @@ body {
   align-items: center;
   width: 55rem;
   margin: auto;
-  background: navy;
+  background: $dark-blue;
   color: $bright-white;
 }
 
 .brand {
+  font-family: 'Special Elite', sans-serif;
   // margin-top: 0;
   // padding: 1rem;
 }
@@ -60,6 +62,8 @@ body {
 }
 
 .right-side {
+  // display: flex;
+  // flex-direction: column;
   flex-grow: 1;
   margin-left: $gutter;
 }
@@ -77,6 +81,7 @@ body {
 }
 
 .characters-title {
+  font-family: 'Special Elite', sans-serif;
   margin: 0;
 }
 
@@ -86,4 +91,8 @@ body {
 }
 
 .comics-container {
+}
+
+.authors {
+  font-family: 'Special Elite', sans-serif;
 }
