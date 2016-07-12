@@ -7,7 +7,7 @@ export default class SeriesInfoView {
   }
 
   render() {
-    let image = this.element.querySelector('.character');
+    let image = this.element.querySelector('.img-container__pic');
     image.src = this.data.data.results[0].thumbnail.path + '.jpg';
 
     console.log('hello world');

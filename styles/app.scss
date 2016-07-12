@@ -22,38 +22,27 @@ body {
   margin: 0;
 }
 
-.heading-container {
+.app-nav {
   width: 100%;
   background: $dark-blue;
 }
 
-.heading {
+.container {
   display: flex;
-  align-items: center;
-  width: 55rem;
+  width: 100%;
+  max-width: 60rem;
   margin: auto;
-  background: $dark-blue;
-  color: $bright-white;
+  // background: $dark-blue;
+  color: $dark-blue;
 }
 
 .brand {
   font-family: 'Special Elite', sans-serif;
-  // margin-top: 0;
-  // padding: 1rem;
 }
 
-.main-content__container {
+.app-main {
   display: flex;
   width: 100%;
-}
-
-.main-content {
-  display: flex;
-  justify-content: space-between;
-  width: 55rem;
-  margin: auto;
-  margin-top: $gutter;
-  overflow: auto;
 }
 
 .spotlight {
@@ -72,7 +61,7 @@ body {
 }
 
 
-.character {
+.img-container__pic {
   width: 100%;
 }
 
@@ -95,7 +84,19 @@ body {
 
 .characters-list {
   display: flex;
-  justify-content: space-between;
+  margin: 0 -1rem;
+}
+
+.characters-list__item {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin: $gutter;
+}
+
+.button {
+  background: $dark-blue;
+  color: $bright-white;
 }
 
 .comics-container {

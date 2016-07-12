@@ -8,18 +8,19 @@
 </head>
 <body>
   <div class="app-page">
+
     <div class="app">
-      <div class="heading-container">
-        <div class="heading">
+      <nav class="app-nav">
+        <div class="container">
           <h1 class="brand">Marvel</h1>
         </div>
-      </div>
+      </nav>
 
-      <div class="main-content__container">
-        <div class="main-content">
+      <div class="app-main">
+        <div class="container">
           <div class="spotlight">
             <div class="img-container">
-              <img class="character" src="http://www.placekitten.com/300/300" alt="">
+              <img class="img-container__pic" src="http://www.placekitten.com/300/300" alt="">
             </div>
             <div class="spotlight-info">
               <h3 class="spotlight-title">Spider-Girl (2010-2011)</h3>
@@ -42,27 +43,28 @@
               <div class="characters">
                 <h1 class="characters-title">Characters</h1>
                 <ul class="characters-list">
+
                   <li class="characters-list__item">
-                    <div class="char-img__container">
-                      <img src="http://www.placekitten.com/100/100" alt="">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
                     </div>
                     <p class="character-name">Character Name</p>
                   </li>
                   <li class="characters-list__item">
-                    <div class="char-img__container">
-                      <img src="http://www.placekitten.com/100/100" alt="">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
                     </div>
                     <p class="character-name">Character Name</p>
                   </li>
                   <li class="characters-list__item">
-                    <div class="char-img__container">
-                      <img src="http://www.placekitten.com/100/100" alt="">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
                     </div>
                     <p class="character-name">Character Name</p>
                   </li>
                   <li class="characters-list__item">
-                    <div class="char-img__container">
-                      <img src="http://www.placekitten.com/100/100" alt="">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
                     </div>
                     <p class="character-name">Character Name</p>
                   </li>
@@ -74,29 +76,38 @@
               <div class="comics">
                 <h1 class="characters-title">Comics</h1>
                 <ul class="characters-list">
+
                   <li class="characters-list__item">
-                    <div class="char-img__container">
-                      <img src="http://www.placekitten.com/100/100" alt="">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
                     </div>
-                    <p class="character-name">Character Name</p>
+                    <span class="number">#8</span>
+                    <span class="character-name">Character Name</span>
+                    <button class="button">Read More</button>
                   </li>
                   <li class="characters-list__item">
-                    <div class="char-img__container">
-                      <img src="http://www.placekitten.com/100/100" alt="">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
                     </div>
-                    <p class="character-name">Character Name</p>
+                    <span class="number">#8</span>
+                    <span class="character-name">Character Name</span>
+                    <button class="button">Read More</button>
                   </li>
                   <li class="characters-list__item">
-                    <div class="char-img__container">
-                      <img src="http://www.placekitten.com/100/100" alt="">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
                     </div>
-                    <p class="character-name">Character Name</p>
+                    <span class="number">#8</span>
+                    <span class="character-name">Character Name</span>
+                    <button class="button">Read More</button>
                   </li>
                   <li class="characters-list__item">
-                    <div class="char-img__container">
-                      <img src="http://www.placekitten.com/100/100" alt="">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
                     </div>
-                    <p class="character-name">Character Name</p>
+                    <span class="number">#8</span>
+                    <span class="character-name">Character Name</span>
+                    <button class="button">Read More</button>
                   </li>
                 </ul>
               </div>
@@ -114,7 +125,7 @@
   <script src="/app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
-    let element = document.querySelector('.main-content__container');
+    let element = document.querySelector('.app-main');
     let start = require('index');
     start(element);
 
