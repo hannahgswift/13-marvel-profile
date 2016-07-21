@@ -1,21 +1,29 @@
 export default class SeriesInfoView {
-  constructor (element, data) {
+  constructor (element, info) {
     this.element = element;
-    this.data = data;
-    console.log(data);
+    this.info = info;
+    console.log(info);
+
+    this.render();
+    this.listCreators();
 
   }
 
-
-
   render() {
-    let image = this.element.querySelector('.img-container__pic');
-    image.src = this.data.data.results[0].thumbnail.path + '.jpg';
-
-    // this.element.querySelector(`.contact__name`).innerText = `${this.data.name.firstName} ${this.data.name.lastName}`;
-    // this.element.querySelector(`.contact__email`).setAttribute(`href`, `mailto:${this.data.email}`);
-    // this.element.querySelector(`.contact__info--phone`).innerText = this.data.phone;
+    this.element.querySelector('.img-container__pic').src = `${this.info.data.results[0].thumbnail.path}.${this.info.data.results[0].thumbnail.extension}`
+    this.element.querySelector('.spotlight-title').innerText = `${this.info.data.results[0].title}`
+    this.element.querySelector('.lifespan').innerText = `${this.info.data.results[0].startYear} - ${this.info.data.results[0].endYear}`
 
     console.log('hello world');
+  }
+
+  listCreators() {
+    this.info.data.results[0].creators.items.forEach((creator) => {
+      const creatorsList = document.querySelector('.creators-list');
+      const creatorName = document.createElement('li');
+
+      creatorName.innerText = creator.name;
+      creatorsList.appendChild(creatorName);
+    });
   }
 }
