@@ -5,7 +5,7 @@
 // @import 'font-awesome';
 @import 'box-sizing';
 
-$bright-white: #ffffff;
+$bright-white: #fff;
 $gutter: 1rem;
 $dark-blue: #2c3e50;
 
@@ -37,8 +37,8 @@ body {
 }
 
 .brand {
-  font-family: 'Special Elite', sans-serif;
   color: $bright-white;
+  font-family: 'Special Elite', sans-serif;
 }
 
 .app-main {
@@ -48,8 +48,8 @@ body {
 
 .spotlight {
   display: flex;
-  flex-direction: column;
   position: relative;
+  flex-direction: column;
   width: 30%;
 }
 
@@ -78,20 +78,27 @@ body {
 }
 
 
-.characters-title {
+.characters-title,
+.comics-title {
+  margin: 0;
   font-family: 'Special Elite', sans-serif;
+}
+
+.characters-list,
+.comics-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
   margin: 0;
 }
 
-.characters-list {
-  display: flex;
-  margin: 0 -1rem;
-}
-
-.characters-list__item {
-  flex-grow: 1;
+.characters-list__item,
+.comics-list__item {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   margin: $gutter;
 }
 
@@ -100,8 +107,6 @@ body {
   color: $bright-white;
 }
 
-.comics-container {
-}
 
 .authors {
   font-family: 'Special Elite', sans-serif;
