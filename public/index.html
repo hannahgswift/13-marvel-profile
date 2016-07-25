@@ -4,13 +4,126 @@
   <meta charset="utf-8">
   <title>13-Marvel-Profile</title>
   <link rel="stylesheet" href="/app.css">
+  <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <div class="app-page">
+
+    <div class="app">
+      <nav class="app-nav">
+        <div class="container">
+          <h1 class="brand">Marvel</h1>
+        </div>
+      </nav>
+
+      <div class="app-main">
+        <div class="container">
+          <div class="spotlight">
+            <div class="img-container">
+              <img class="img-container__pic" src="http://www.placekitten.com/300/300" alt="">
+            </div>
+            <div class="spotlight-info">
+              <h3 class="spotlight-title"></h3>
+              <h4 class="lifespan"></h4>
+              <h2 class="authors">Creators:</h2>
+              <hr>
+                <ul class="creators-list">
+                  <li></li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="right-side">
+            <div class="characters-container">
+              <div class="characters">
+                <h1 class="characters-title">Characters</h1>
+                <ul class="characters-list">
+<!--
+                  <li class="characters-list__item">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
+                    </div>
+                    <p class="character-name">Character Name</p>
+                  </li>
+                  <li class="characters-list__item">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
+                    </div>
+                    <p class="character-name">Character Name</p>
+                  </li>
+                  <li class="characters-list__item">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
+                    </div>
+                    <p class="character-name">Character Name</p>
+                  </li>
+                  <li class="characters-list__item">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
+                    </div>
+                    <p class="character-name">Character Name</p>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+
+            <div class="comics-container">
+              <div class="comics">
+                <h1 class="comics-title">Comics</h1>
+                <ul class="comics-list">
+<!--
+                  <li class="comics-list__item">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
+                    </div>
+                    <span class="number">#8</span>
+                    <span class="character-name">Character Name</span>
+                    <button class="button">Read More</button>
+                  </li>
+                  <li class="comics-list__item">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
+                    </div>
+                    <span class="number">#8</span>
+                    <span class="character-name">Character Name</span>
+                    <button class="button">Read More</button>
+                  </li>
+                  <li class="comics-list__item">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
+                    </div>
+                    <span class="number">#8</span>
+                    <span class="character-name">Character Name</span>
+                    <button class="button">Read More</button>
+                  </li>
+                  <li class="comics-list__item">
+                    <div class="img-container">
+                      <img class="img-container__pic" src="http://www.placekitten.com/100/100" alt="">
+                    </div>
+                    <span class="number">#8</span>
+                    <span class="character-name">Character Name</span>
+                    <button class="button">Read More</button>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="/vendor.js" charset="utf-8"></script>
   <script src="/app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
+    let element = document.querySelector('.app-main');
+    let start = require('index');
+    start(element);
+
   </script>
 </body>
 </html>

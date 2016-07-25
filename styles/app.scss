@@ -1,6 +1,113 @@
-// @import 'yoga';
-// @import 'normalize';
+@import 'yoga';
+@import 'normalize';
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+
+$bright-white: #fff;
+$gutter: 1rem;
+$dark-blue: #2c3e50;
+
+* {
+  border: 1px solid red;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+}
+
+.app-nav {
+  width: 100%;
+  background: $dark-blue;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+  // background: $dark-blue;
+  color: $dark-blue;
+}
+
+.brand {
+  color: $bright-white;
+  font-family: 'Special Elite', sans-serif;
+}
+
+.app-main {
+  display: flex;
+  width: 100%;
+}
+
+.spotlight {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 30%;
+}
+
+.spotlight-info {
+
+}
+
+.img-container {
+  width: 100%;
+}
+
+
+.img-container__pic {
+  width: 100%;
+}
+
+.right-side {
+  // display: flex;
+  // flex-direction: column;
+  flex-grow: 1;
+  margin-left: $gutter;
+}
+
+.characters-container {
+  flex-grow: 1;
+}
+
+
+.characters-title,
+.comics-title {
+  margin: 0;
+  font-family: 'Special Elite', sans-serif;
+}
+
+.characters-list,
+.comics-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+
+.characters-list__item,
+.comics-list__item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: $gutter;
+}
+
+.button {
+  background: $dark-blue;
+  color: $bright-white;
+}
+
+
+.authors {
+  font-family: 'Special Elite', sans-serif;
+}
